@@ -19,6 +19,8 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  let cartItems = 
+  return `In your cart, you have ${cartItems}.
 }
 
 function total() {
