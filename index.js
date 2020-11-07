@@ -25,7 +25,7 @@ function viewCart() {
   
   let cartItems = "In your cart, you have";
   if(cart.length === 1) {
-    return `${cartItems} ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+    return `${cartItems} ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
   
   for(let i = 0; i < cart.length; i++) {
