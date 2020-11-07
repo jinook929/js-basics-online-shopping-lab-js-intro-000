@@ -19,7 +19,15 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  if(cart.length === 0) {
+    return 'Your shopping cart is empty.';
+  }
+  
   let cartItems = "In your cart, you have";
+  if(cart.length === 1) {
+    return `${cartItems} ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+  }
+  
   for(let i = 0; i < cart.length; i++) {
     if(i !== (cart.length - 1)) {
       cartItems += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
@@ -27,11 +35,13 @@ function viewCart() {
       cartItems += ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
     }
   }
+  
   return cartItems;
 }
 
 function total() {
   // write your code here
+  
 }
 
 function removeFromCart(item) {
