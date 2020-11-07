@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- let price = 
+ let price = Math.random() * (100 - min) + min;
  cart.push({'itemName': item, 'itemPrice': item.itemPrice});
 }
 
